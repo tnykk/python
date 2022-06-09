@@ -1,0 +1,13 @@
+l2=[]
+def duzelt(l):
+    for i in l:
+        if isinstance(i, int) or isinstance(i,str):
+            l2.append(i)
+        else:
+            duzelt(i)
+    
+
+
+liste = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+duzelt(liste)
+print (l2)
